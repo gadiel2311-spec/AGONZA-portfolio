@@ -113,8 +113,6 @@ nav a:hover {
   color: #d8a8a0; /* rosa apagado como acento */
 }
 
-h1 {
-}
 h2 {
   font-size: 1.6rem;
   font-family: "Rubik", sans-serif;
@@ -129,7 +127,7 @@ p {
   text-align: center;
 }
 
-li {
+p {
   font-size: 1rem;
   color: #18181af5;
   font-family: "Rubik", sans-serif;
@@ -151,12 +149,12 @@ li {
   height: 320px;
   background-color: var(--card-bg);
   overflow: hidden;
-  border-radius: 12px; /* Slightly less rounded than 15px, often looks more modern */
-  box-shadow: 0 4px 15px var(--shadow-color); /* Subtle default shadow */
-  margin: 0 auto; /* Center the card if no grid container is present, replacing margin-left: 25% for a single card example */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
-  cursor: pointer; /* Indicates the card is interactive */
-  display: flex; /* Helps align content inside the card */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
   flex-direction: column;
 }
 
@@ -196,18 +194,16 @@ li {
   box-shadow: 0 10px 25px var(--hover-shadow-color); /* Stronger shadow on hover */
 }
 
-/* The ampersand syntax (&:hover) suggests you might be using SCSS/Sass. 
-   In standard CSS, the hover effect on children is applied like this: */
 .card:hover .card-info {
   /* You can add a subtle effect here too, though not strictly necessary if translateY is on the parent */
 }
 
 @media (max-width: 600px) {
   .grid-container {
-    padding: 0.5rem; /* Less padding on small screens */
+    padding: 0.5rem;
   }
   .card {
-    width: 100%; /* Make card fill the container on mobile */
+    width: 100%;
     flex-basis: auto;
     margin-left: 0;
   }
@@ -293,7 +289,7 @@ footer i.fa-github {
 }
 
 .logo img {
-  height: 3.2rem;
+  height: 1.2rem;
   filter: brightness(0);
   opacity: 50%;
 }
@@ -376,4 +372,9 @@ section {
   color: #18181af5;
   font-family: "Rubik", sans-serif;
   text-align: center;
+}
+ul {
+  .p {
+    align-items: flex-end;
+  }
 }
