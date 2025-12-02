@@ -142,23 +142,54 @@ p {
   --hover-shadow-color: rgba(0, 0, 0, 0.2);
 }
 
-.card {
-  position: relative; /* Essential for positioning internal elements */
-  flex: 0 0 240px;
+
+ .card {
   width: 240px;
   height: 320px;
-  background-color: var(--card-bg);
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px var(--shadow-color);
-  margin: 0 auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+ position: relative;Essential for positioning internal elements
   display: flex;
   flex-direction: column;
+  min-width: 0;
+  border-radius:12px;
+   word-wrap: break-word;
+  position: relative; Essential for positioning internal elements
+  border-radius: 12px;
 }
 
-.card img {
+  
+ .col-md-4{
+  display: flex;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+.card -img {
   width: 100%; /* Image fills the width of the card */
   height: 60%; /* Or set a fixed height for consistency */
   object-fit: cover; /* Ensures image covers the area without distortion */
@@ -174,29 +205,10 @@ p {
   gap: 0.75rem; /* Increased gap for better spacing */
   color: var(--text-color);
   flex-grow: 1; /* Allows card info to fill remaining space */
-}
+}  
 
-/* Add specific styling for text within card-info for hierarchy */
-.card-info h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0;
-}
 
-.card-info p {
-  font-size: 0.9rem;
-  color: #666;
-  margin: 0;
-}
 
-.card:hover {
-  transform: translateY(-5px); /* Increased lift on hover */
-  box-shadow: 0 10px 25px var(--hover-shadow-color); /* Stronger shadow on hover */
-}
-
-.card:hover .card-info {
-  /* You can add a subtle effect here too, though not strictly necessary if translateY is on the parent */
-}
 
 @media (max-width: 600px) {
   .grid-container {
