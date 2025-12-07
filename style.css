@@ -8,11 +8,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-color: linear-gradient(
     to right,
-    #f5f5f0,
-    #e0d4b8,
-    #c2a67f,
-    #8b5e3c,
-    #1a0e07
+    #a0d2eb #e5eaf5 #d0bdf4 #8458b3 #a28089
   );
 }
 
@@ -40,19 +36,15 @@ body {
     #f5f5f0,
     #e0d4b8,
     #c2a67f,
-    #8b5e3c,
-    #1a0e07
+    #8b5e3c2e,
+    #371d0e00
   );
-  color: rgb(16, 16, 16);
+  color: rgb(199, 193, 193);
   font-family: "Poppins", sans-serif;
   margin: 0;
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
-}
-
-p {
-  line-height: 1.5em;
 }
 
 .grid-container {
@@ -84,7 +76,7 @@ nav {
 }
 
 nav h1 {
-  color: #5c5656;
+  color: #f8f4f4;
   font-size: 1.5em;
   text-align: center;
   margin-left: 2%;
@@ -117,98 +109,69 @@ h2 {
   font-size: 1.6rem;
   font-family: "Rubik", sans-serif;
   margin-bottom: 10px;
-  color: #131212ce;
+  color: #1d1c1cce;
 }
 
 p {
   font-size: -05rem;
-  color: #18181af5;
+  color: #dbdbe2f5;
   font-family: "Rubik", sans-serif;
   text-align: center;
 }
 
 p {
   font-size: 1rem;
-  color: #18181af5;
+  color: #3e3e3ff5;
   font-family: "Rubik", sans-serif;
   text-align: center;
 }
 
 /* card */
+
 :root {
-  --card-bg: #ffffff; /* Use a clean white background */
+  --card-bg: #363131b2;
   --text-color: #333333;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --hover-shadow-color: rgba(0, 0, 0, 0.2);
 }
 
-
- .card {
+.card {
   width: 240px;
   height: 320px;
- position: relative;Essential for positioning internal elements
+  position: relative; /* Essential for positioning internal elements */
   display: flex;
   flex-direction: column;
   min-width: 0;
-  border-radius:12px;
-   word-wrap: break-word;
-  position: relative; Essential for positioning internal elements
   border-radius: 12px;
+  word-wrap: break-word;
+  background: var(--card-bg);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  overflow: hidden;
 }
 
-  
- .col-md-4{
-  display: flex;
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-.card -img {
-  width: 100%; /* Image fills the width of the card */
-  height: 60%; /* Or set a fixed height for consistency */
-  object-fit: cover; /* Ensures image covers the area without distortion */
+/*  */
+.card-img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
   display: block;
 }
 
 .card-info {
-  padding: 1.25rem 1rem; /* Slightly more vertical padding */
+  padding: 1.25rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; /* Center the text for a balanced look */
-  gap: 0.75rem; /* Increased gap for better spacing */
+  text-align: center;
+  gap: 0.75rem;
   color: var(--text-color);
-  flex-grow: 1; /* Allows card info to fill remaining space */
-}  
+  flex-grow: 1;
+}
 
-
-
+.btn-secondary {
+  text-decoration: none;
+  color: white;
+}
 
 @media (max-width: 600px) {
   .grid-container {
@@ -224,35 +187,11 @@ p {
 /**FOOTER**/
 
 footer {
-  padding: 2rem 5%;
-}
-
-.grid--footer {
-  grid-template-columns: 1fr auto;
-}
-
-footer a {
-  color: #171717;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-footer i {
-  margin-right: 6px;
-  color: #0077b5;
-  font-size: 1.6rem;
-  color: #767676;
-  transition: all 0.3s; /* azul LinkedIn */
-}
-
-footer i.fa-github {
-  color: #000;
-  font-size: 1.6rem;
-  color: #424141;
-  transition: all 0.3s; /* negro GitHub */
+  padding: 3rem 5%;
 }
 
 .copyright {
+  text-align: center;
   font-size: 1.4rem;
   line-height: 1.6;
   color: #767676;
@@ -343,12 +282,12 @@ nav {
 
 .hero {
   background: linear-gradient(
-    to right,
+    /* to right,
     #f5f5f0,
     #e0d4b8,
     #c2a67f,
     #8b5e3c,
-    #1a0e07
+    #1a0e07 */
   );
   color: #ffffff;
   padding: 100px 20px;
